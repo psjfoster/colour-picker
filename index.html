@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Paul Greedo Foster">
+    <meta name="viewport" content="width=device-width">
+    <title>Colour Picker</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+
+<body onload="onLoad()">
+  <script type="text/javascript" src="./colour-picker.js"></script>
+  <form id="colour-palette">
+    <fieldset id="colour1" class="colour"
+              style="background-color: #B400E6;
+                     color: white">
+      <h1>Colour 1</h1>
+      <div class="input-pair">
+        <label for="hexCode1">Hex</label>
+        <input id="hexCode1" class="text hexColour" 
+               type="text"
+               value="B400E6"
+               size="8"/>
+      </div>
+      <div class="input-pair">
+        <label for="numberR1">R</label>
+        <input id="numberR1" class="eightBit R"
+               type="number"
+               min="0" max="255"
+               value="180"/>
+      </div>
+      <div class="input-pair">
+        <label for="numberG1">G</label>
+        <input id="numberG1" class="eightBit G"
+               type="number"
+               min="0" max="255"
+               value="0"/>
+      </div>
+      <div class="input-pair">
+        <label for="numberB1">B</label>
+        <input id="numberB1" class="eightBit B"
+               type="number"
+               min="0" max="255"
+               value="230"/>
+      </div>
+      <div hidden>
+        <input id="luminance1" class="decimal"
+               type="number"
+               readonly
+               value=""/>
+        <input id="contrast1" class="decimal"
+               type="number"
+               readonly
+               value=""/>
+      </div>
+    </fieldset>
+
+    <fieldset id="colour2" class="colour"
+              style="background-color: #FAA005">
+      <h1>Colour 2</h1>
+      <div class="input-pair">
+        <label for="hexCode2">Hex</label>
+        <input id="hexCode2" class="text hexColour" 
+               type="text"
+               value="FAA005"
+               size="8"/>
+      </div>
+      <div class="input-pair">
+        <label for="numberR2">R</label>
+        <input id="numberR2" class="eightBit R"
+               type="number"
+               min="0" max="255"
+               value="250"/>
+      </div>
+      <div class="input-pair">
+        <label for="numberG2">G</label>
+        <input id="numberG2" class="eightBit G"
+               type="number"
+               min="0" max="255"
+               value="160"/>
+      </div>
+      <div class="input-pair">
+        <label for="numberB2">B</label>
+        <input id="numberB2" class="eightBit B"
+               type="number"
+               min="0" max="255"
+               value="5"/>
+      </div>
+      <div hidden>
+        <input id="luminance2" class="decimal"
+               type="number"
+               readonly
+               value=""/>
+        <input id="contrast2" class="decimal"
+               type="number"
+               readonly
+               value=""/>
+      </div>
+    </fieldset>
+
+    <fieldset id="colour3" class="colour"
+              style="background-color: #B400E6;
+                     color: white">
+      <h1>Colour 3</h1>
+      <div class="input-pair">
+        <label for="hexCode3">Hex</label>
+        <input id="hexCode3" class="text hexColour"
+               type="text"
+               value="B400E6"
+               size="8"/>
+      </div>
+      <div class="input-pair">
+        <label for="numberR3">R</label>
+        <input id="numberR3" class="eightBit R"
+               type="number"
+               min="0" max="255"
+               value="180"/>
+      </div>
+      <div class="input-pair">
+        <label for="numberG3">G</label>
+        <input id="numberG3" class="eightBit G"
+               type="number"
+               min="0" max="255"
+               value="0"/>
+      </div>
+      <div class="input-pair">
+        <label for="numberB3">B</label>
+        <input id="numberB3" class="eightBit B"
+               type="number"
+               min="0" max="255"
+               value="230"/>
+      </div>
+      <div hidden>
+        <input id="luminance3" class="decimal"
+               type="number"
+               readonly
+               value=""/>
+        <input id="contrast3" class="decimal"
+               type="number"
+               readonly
+               value=""/>
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
