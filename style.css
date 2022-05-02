@@ -4,6 +4,10 @@
   padding: 0;
   transition: color 1s;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 form {
   margin: 0;
   padding: 0;
@@ -16,6 +20,17 @@ fieldset {
   padding: 1rem 1rem;
   display: flex;
   flex-direction: column;
+}
+#colour1 {
+  background-color: #B400E6;
+  color: white;
+}
+#colour2 {
+  background-color: #FAA005;
+}
+#colour3 {
+  background-color: #B400E6;
+  color: white;
 }
 h1 {
   text-align: center;

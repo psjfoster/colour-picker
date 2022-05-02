@@ -2,6 +2,7 @@
 const colours = document.querySelectorAll("fieldset.colour");
 
 function onLoad() {
+  const colours = document.querySelectorAll("fieldset.colour");
   const hexColours = document.querySelectorAll(".hexColour");
   const RColours = document.querySelectorAll(".R");
   const GColours = document.querySelectorAll(".G");
@@ -122,15 +123,17 @@ function calcContrastRatios() {
   let luminanceArray = [];
   let contrastArray = [];
 
-  for (let c = 0; c < colours.length; c++) {
-    luminanceArray[c] = 
-      parseFloat(document.querySelector("#luminance" + (c + 1)).value);
+  for (let l = 0; l < colours.length; l++) {
+    luminanceArray[l] = 
+      parseFloat(document.querySelector("#luminance" + (l + 1)).value);
   }
+
   let minLuminance = Math.min(...luminanceArray);
+  console.log("hi");
 
   for (let c = 0; c < colours.length; c++) {
     contrastArray[c] = 
       luminanceArray[c] / minLuminance;
-    document.querySelector("#contrast" + (c + 1)).value = contrastArray[c];
+    console.log(contrastArray);
   }
 }
