@@ -129,7 +129,6 @@ function calcContrastRatios() {
   }
 
   let minLuminance = Math.min(...luminanceArray);
-  console.log("hi");
 
   for (let c = 0; c < colours.length; c++) {
     contrastArray[c] = 
