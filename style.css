@@ -52,10 +52,13 @@ h2 {
 label {
   font-weight: bold;
   text-align: center;
-  width: 3rem;
+  width: 6rem;
 }
 input {
-  margin: 0;
+  margin-right: 0.5rem;
   padding: 0;
-  width: 5rem;
+  width: 4rem;
+}
+.calculations {
+  display: ;
 }
