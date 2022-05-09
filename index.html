@@ -20,7 +20,7 @@
           <label for="hexCode1">Hex</label>
           <input id="hexCode1" class="text hexColour" 
                 type="text"
-                value="B400E6"
+                value="b400e6"
                 size="8"/></div>
 
         <div class="rgb-group">
@@ -51,7 +51,7 @@
             <label for="numberH1">H</label>
             <input id="numberH1" class="int H"
                   type="number"
-                  min="0" max="360"
+                  min="0" max="359"
                   value="287"/></div>
 
           <div class="input-pair">
@@ -88,7 +88,163 @@
           <input id="contrast1" class="decimal"
                  type="number"
                  readonly
-                 value="1"/></div>
+                 value="1.0"/></div>
+      </fieldset>
+
+      <fieldset id="colour2" class="colour">
+        <h1>Colour 2</h1>
+
+        <div class="input-pair">
+          <label for="hexCode2">Hex</label>
+          <input id="hexCode2" class="text hexColour" 
+                type="text"
+                value="faa005"
+                size="8"/></div>
+
+        <div class="rgb-group">
+          <div class="input-pair">
+            <label for="numberR2">R</label>
+            <input id="numberR2" class="eightBit R"
+                  type="number"
+                  min="0" max="255"
+                  value="250"/></div>
+
+          <div class="input-pair">
+            <label for="numberG2">G</label>
+            <input id="numberG2" class="eightBit G"
+                  type="number"
+                  min="0" max="255"
+                  value="160"/></div>
+
+          <div class="input-pair">
+            <label for="numberB2">B</label>
+            <input id="numberB2" class="eightBit B"
+                  type="number"
+                  min="0" max="255"
+                  value="5"/></div>
+        </div>
+
+        <div class="hsl-group">
+          <div class="input-pair">
+            <label for="numberH2">H</label>
+            <input id="numberH2" class="int H"
+                  type="number"
+                  min="0" max="360"
+                  value="38"/></div>
+
+          <div class="input-pair">
+            <label for="numberS2">S</label>
+            <input id="numberS2" class="decimal S"
+                  type="number"
+                  min="0" max="1"
+                  step="0.01" value="0.96"/></div>
+
+          <div class="input-pair">
+            <label for="numberL2">L</label>
+            <input id="numberL2" class="decimal L"
+                  type="number"
+                  min="0" max="1"
+                  step="0.01" value="0.50"/></div>
+        </div>
+
+        <div class="input-pair">
+          <label for="luminosity2">Luminosity</label>
+          <input id="luminosity2" class="decimal"
+                 type="number"
+                 readonly
+                 value="0.664"/></div>
+
+        <div class="input-pair">
+          <label for="luminance2">Luminance</label>
+          <input id="luminance2" class="decimal"
+                 type="number"
+                 readonly
+                 value="0.455"/></div>
+
+        <div class="input-pair">
+          <label for="contrast2">Contrast</label>
+          <input id="contrast2" class="decimal"
+                 type="number"
+                 readonly
+                 value="2.5"/></div>
+      </fieldset>
+
+      <fieldset id="colour3" class="colour">
+        <h1>Colour 3</h1>
+
+        <div class="input-pair">
+          <label for="hexCode3">Hex</label>
+          <input id="hexCode3" class="text hexColour" 
+                type="text"
+                value="1edc00"
+                size="8"/></div>
+
+        <div class="rgb-group">
+          <div class="input-pair">
+            <label for="numberR3">R</label>
+            <input id="numberR3" class="eightBit R"
+                  type="number"
+                  min="0" max="255"
+                  value="30"/></div>
+
+          <div class="input-pair">
+            <label for="numberG3">G</label>
+            <input id="numberG3" class="eightBit G"
+                  type="number"
+                  min="0" max="255"
+                  value="220"/></div>
+
+          <div class="input-pair">
+            <label for="numberB3">B</label>
+            <input id="numberB3" class="eightBit B"
+                  type="number"
+                  min="0" max="255"
+                  value="0"/></div>
+        </div>
+
+        <div class="hsl-group">
+          <div class="input-pair">
+            <label for="numberH3">H</label>
+            <input id="numberH3" class="int H"
+                  type="number"
+                  min="0" max="360"
+                  value="112"/></div>
+
+          <div class="input-pair">
+            <label for="numberS3">S</label>
+            <input id="numberS3" class="decimal S"
+                  type="number"
+                  min="0" max="1"
+                  step="0.01" value="1"/></div>
+
+          <div class="input-pair">
+            <label for="numberL3">L</label>
+            <input id="numberL3" class="decimal L"
+                  type="number"
+                  min="0" max="1"
+                  step="0.01" value="0.43"/></div>
+        </div>
+
+        <div class="input-pair">
+          <label for="luminosity3">Luminosity</label>
+          <input id="luminosity3" class="decimal"
+                 type="number"
+                 readonly
+                 value="0.542"/></div>
+
+        <div class="input-pair">
+          <label for="luminance3">Luminance</label>
+          <input id="luminance3" class="decimal"
+                 type="number"
+                 readonly
+                 value="0.515"/></div>
+
+        <div class="input-pair">
+          <label for="contrast3">Contrast</label>
+          <input id="contrast3" class="decimal"
+                 type="number"
+                 readonly
+                 value="2.8"/></div>
       </fieldset>
 
     </form>

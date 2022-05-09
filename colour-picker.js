@@ -31,7 +31,7 @@ function onLoad() {
     const h = document.querySelector("#numberH" + (c + 1));
       h.addEventListener("input", function() {
         if (this.value >= 0 &&
-            this.value <= 360) {
+            this.value < 360) {
               writeHslToRgb(c + 1);
               writeRgbToHex(c + 1);
         }
@@ -173,6 +173,8 @@ function setFieldsetColours(n) {
 
   document.querySelector("#luminance" + n).value = 
     calcLuminance(R, G, B);
+
+  calcContrastRatios();
 }
 
 function calcLuminance(R, G, B) {
@@ -206,21 +208,22 @@ function calcLuminance(R, G, B) {
   return ((Rs * 0.2126) + (Gs * 0.7152) + (Bs * 0.0722)).toFixed(3);
 }
 
-// function calcContrastRatios() {  
-//   const colours = document.querySelectorAll("fieldset.colour");
-//   let luminanceArray = [];
-//   let contrastArray = [];
+function calcContrastRatios() {  
+  const colours = document.querySelectorAll("fieldset.colour");
 
-//   for (let l = 0; l < colours.length; l++) {
-//     luminanceArray[l] = 
-//         parseFloat(document.querySelector("#luminance" + (l + 1)).value);
-//   }
+  let luminanceArray = [];
+  let contrastArray = [];
 
-//   let minLuminance = Math.min(...luminanceArray);
+  for (let l = 0; l < colours.length; l++) {
+    luminanceArray[l] = 
+        parseFloat(document.querySelector("#luminance" + (l + 1)).value);
+  }
 
-//   for (let c = 0; c < colours.length; c++) {
-//     contrastArray[c] = (luminanceArray[c] + 0.05) / (minLuminance + 0.05);
-//     document.querySelector("#contrast" + (c + 1)).value = 
-//         contrastArray[c].toFixed(1);
-//   }
-// }
+  let minLuminance = Math.min(...luminanceArray);
+
+  for (let c = 0; c < colours.length; c++) {
+    contrastArray[c] = (luminanceArray[c] + 0.05) / (minLuminance + 0.05);
+    document.querySelector("#contrast" + (c + 1)).value = 
+        contrastArray[c].toFixed(1);
+  }
+}
