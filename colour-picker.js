@@ -48,6 +48,16 @@ function onLoad() {
       });
     }
   }
+
+  const greyscaleToggle = document.querySelector("#greyscaleSwitch");
+  greyscaleToggle.addEventListener("change", () => {
+    if (greyscaleToggle.checked) {
+      document.body.style.filter = "grayscale(100%)";
+    }
+    else {
+      document.body.style.filter = "grayscale(0%)";
+    }
+  })
 }
 
 function writeHexToRgb(n) {
@@ -161,7 +171,6 @@ function writeHslToRgb(n) {
 function setFieldsetColours(n) {
   const colour = document.querySelector("#colour" + n);
   const hex = document.querySelector("#hexCode" + n).value;
-
   colour.style.backgroundColor = "#" + hex;
 
   const R = parseInt(hex.substr(0,2), 16);
@@ -171,8 +180,15 @@ function setFieldsetColours(n) {
   document.querySelector("#luminosity" + n).value = 
     (((R * 0.299) + (G * 0.587) + (B * 0.114)) / 255).toFixed(3);
 
-  document.querySelector("#luminance" + n).value = 
-    calcLuminance(R, G, B);
+  const testLuminance = calcLuminance(R, G, B);
+  if (testLuminance < 0.175) {
+    colour.style.color = "white";
+  }
+  else if (testLuminance > 0.183) {
+    colour.style.color = "black";
+  }
+  
+  document.querySelector("#luminance" + n).value = testLuminance;
 
   calcContrastRatios();
 }
