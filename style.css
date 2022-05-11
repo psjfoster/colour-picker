@@ -29,7 +29,8 @@ fieldset {
   background-color: #FAA005;
 }
 #colour3 {
-  background-color: #1EDC00;
+  background-color: #B400E6;
+  color: white;
 }
 h1 {
   text-align: center;
@@ -57,7 +58,4 @@ input {
   margin-right: 0.5rem;
   padding: 0;
   width: 4rem;
-}
-.calculations {
-  display: true;
 }
