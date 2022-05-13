@@ -1,0 +1,29 @@
+{ "colours": [ 
+  {"name": "redHeat",
+    "hex": "ff351f"
+  }, 
+  {"name": "greenOK",
+    "hex": "ecf8ec"
+  }, 
+  {"name": "darkGreen",
+    "hex": "465846"
+  }, 
+  {"name": "blueCool",
+    "hex": "0a8fd1"
+  }, 
+  {"name": "lightGrey",
+    "hex": "f5f5f5"
+  }, 
+  {"name": "darkGrey",
+    "hex": "a1a1a1"
+  }, 
+  {"name": "upRed",
+    "hex": "ff4f38"
+  }, 
+  {"name": "minusBlue",
+    "hex": "0ba6f4"
+  }, 
+  {"name": "watermark",
+    "hex": "597859"
+  }
+]}

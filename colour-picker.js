@@ -1,6 +1,11 @@
 /* colour-picker.js */
 
 function onLoad() {
+  initColours();
+  tryStorage();
+}
+
+function initColours() {
   const colours = document.querySelectorAll("fieldset.colour");
   const hexColours = document.querySelectorAll(".hexColour");
 
@@ -57,7 +62,32 @@ function onLoad() {
     else {
       document.body.style.filter = "grayscale(0%)";
     }
-  })
+  });
+}
+
+function tryStorage() {
+  let colours = localStorage.getItem("colours");
+  
+  if (colours == null) {
+    let colours = [
+      {"name": "switchNeonPurple", "hex": "b400e6"},
+      {"name": "switchNeonOrange", "hex": "faa005"},
+      {"name": "switchNeonGreen", "hex": "1edc00"}
+    ];
+    localStorage.colours = JSON.stringify(colours);
+  }
+
+  colours = JSON.parse(localStorage.getItem("colours"));
+
+  for (let c = 0; c < 3; c++) {
+    document.querySelector("#hexCode" + (c + 1)).value =
+      colours[c].hex;
+    document.querySelector("#colour" + (c + 1) + " h1").innerText =
+      colours[c].name;
+
+    writeHexToRgb(c + 1);
+    writeRgbToHsl(c + 1);
+  }
 }
 
 function writeHexToRgb(n) {
