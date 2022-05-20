@@ -1,0 +1,31 @@
+/* style.css */
+:root {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+form {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+h1 {
+  font-size: 100%;
+  font-weight: bold;
+  text-align: center;
+  width: 8rem;
+}
+input {
+  margin-right: 0.5rem;
+  padding: 0;
+  width: 4rem;
+}
+.swatch {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}

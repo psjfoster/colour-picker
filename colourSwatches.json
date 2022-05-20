@@ -1,29 +1,232 @@
-{ "colours": [ 
-  {"name": "redHeat",
-    "hex": "ff351f"
-  }, 
-  {"name": "greenOK",
-    "hex": "ecf8ec"
-  }, 
-  {"name": "darkGreen",
-    "hex": "465846"
-  }, 
-  {"name": "blueCool",
-    "hex": "0a8fd1"
-  }, 
-  {"name": "lightGrey",
-    "hex": "f5f5f5"
-  }, 
-  {"name": "darkGrey",
-    "hex": "a1a1a1"
-  }, 
-  {"name": "upRed",
-    "hex": "ff4f38"
-  }, 
-  {"name": "minusBlue",
-    "hex": "0ba6f4"
-  }, 
-  {"name": "watermark",
-    "hex": "597859"
+{ "colours": [
+  {
+      "name": "axAlarm",
+      "hex": "cf1624",
+      "luminance": "0.140"
+  },
+  {
+      "name": "jcNeonPink",
+      "hex": "ff3278",
+      "luminance": "0.249"
+  },
+  {
+      "name": "jcNeonPurple",
+      "hex": "b400e6",
+      "luminance": "0.154"
+  },
+  {
+      "name": "axOverridden",
+      "hex": "bfaddd",
+      "luminance": "0.462"
+  },
+  {
+      "name": "jcLoZSSPurple",
+      "hex": "500fc8",
+      "luminance": "0.062"
+  },
+  {
+      "name": "jcBlue",
+      "hex": "4655f5",
+      "luminance": "0.144"
+  },
+  {
+      "name": "dimPurple",
+      "hex": "6471b4",
+      "luminance": "0.178"
+  },
+  {
+      "name": "jcLoZSSBlue",
+      "hex": "2d50f0",
+      "luminance": "0.126"
+  },
+  {
+      "name": "jcRoyalBlue",
+      "hex": "1473fa",
+      "luminance": "0.193"
+  },
+  {
+      "name": "jcWildcatBlue",
+      "hex": "0084ff",
+      "luminance": "0.237"
+  },
+  {
+      "name": "minusBlue",
+      "hex": "0ba6f4",
+      "luminance": "0.339"
+  },
+  {
+      "name": "blueCool",
+      "hex": "0a8fd1",
+      "luminance": "0.243"
+  },
+  {
+      "name": "jcNeonBlue",
+      "hex": "0ab9e6",
+      "luminance": "0.405"
+  },
+  {
+      "name": "jcACNHBlue",
+      "hex": "96f5f5",
+      "luminance": "0.784"
+  },
+  {
+      "name": "scrubGreen",
+      "hex": "64e8bc",
+      "luminance": "0.641"
+  },
+  {
+      "name": "jcACNHGreen",
+      "hex": "82ff96",
+      "luminance": "0.785"
+  },
+  {
+      "name": "lightGreen",
+      "hex": "ecf8ec",
+      "luminance": "0.910"
+  },
+  {
+      "name": "midGreen",
+      "hex": "93d793",
+      "luminance": "0.569"
+  },
+  {
+      "name": "watermarkGreen",
+      "hex": "597859",
+      "luminance": "0.163"
+  },
+  {
+      "name": "darkGreen",
+      "hex": "465846",
+      "luminance": "0.087"
+  },
+  {
+      "name": "jcNeonGreen",
+      "hex": "1edc00",
+      "luminance": "0.515"
+  },
+  {
+      "name": "jcNeonYellow",
+      "hex": "e6ff00",
+      "luminance": "0.883"
+  },
+  {
+      "name": "jcPikachuYellow",
+      "hex": "ffdc00",
+      "luminance": "0.724"
+  },
+  {
+      "name": "dimYellow",
+      "hex": "a38f29",
+      "luminance": "0.276"
+  },
+  {
+      "name": "brightYellow",
+      "hex": "ffe880",
+      "luminance": "0.805"
+  },
+  {
+      "name": "litYellow",
+      "hex": "f1d03b",
+      "luminance": "0.641"
+  },
+  {
+      "name": "jcWildcatYellow",
+      "hex": "ffcc00",
+      "luminance": "0.644"
+  },
+  {
+      "name": "axDown",
+      "hex": "fac600",
+      "luminance": "0.607"
+  },
+  {
+      "name": "jcNeonOrange",
+      "hex": "faa005",
+      "luminance": "0.455"
+  },
+  {
+      "name": "jcEeveeBrown",
+      "hex": "c88c32",
+      "luminance": "0.313"
+  },
+  {
+      "name": "axStale",
+      "hex": "d9c09d",
+      "luminance": "0.549"
+  },
+  {
+      "name": "jcCardboard",
+      "hex": "d7aa73",
+      "luminance": "0.444"
+  },
+  {
+      "name": "axFault",
+      "hex": "fc7734",
+      "luminance": "0.341"
+  },
+  {
+      "name": "jcMario",
+      "hex": "f04614",
+      "luminance": "0.230"
+  },
+  {
+      "name": "upRed",
+      "hex": "ff4f38",
+      "luminance": "0.271"
+  },
+  {
+      "name": "jcNeonRed",
+      "hex": "ff3c28",
+      "luminance": "0.246"
+  },
+  {
+      "name": "redHeat",
+      "hex": "ff351f",
+      "luminance": "0.239"
+  },
+  {
+      "name": "jcRed",
+      "hex": "e10f00",
+      "luminance": "0.163"
+  },
+  {
+      "name": "lightGrey",
+      "hex": "f5f5f5",
+      "luminance": "0.913"
+  },
+  {
+      "name": "jcWhite",
+      "hex": "e6e6e6",
+      "luminance": "0.791"
+  },
+  {
+      "name": "axDisabled",
+      "hex": "d6d6d6",
+      "luminance": "0.672"
+  },
+  {
+      "name": "darkGrey",
+      "hex": "a1a1a1",
+      "luminance": "0.356"
+  },
+  {
+      "name": "jcGrey",
+      "hex": "828282",
+      "luminance": "0.223"
+  },
+  {
+      "name": "jcMHRGrey",
+      "hex": "818282",
+      "luminance": "0.222"
+  },
+  {
+      "name": "darkerGrey",
+      "hex": "525252",
+      "luminance": "0.084"
+  },
+  {
+      "name": "jcBlack",
+      "hex": "313131",
+      "luminance": "0.031"
   }
 ]}

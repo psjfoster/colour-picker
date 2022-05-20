@@ -2,7 +2,8 @@
 
 function onLoad() {
   initColours();
-  tryStorage();
+  // tryStorage();
+  setSwatches();
 }
 
 function initColours() {
@@ -87,6 +88,24 @@ function tryStorage() {
 
     writeHexToRgb(c + 1);
     writeRgbToHsl(c + 1);
+  }
+
+  for (let s = 1; c < colours.length; c++) {
+    const swatch = document.querySelector("#swatch" + s);
+    
+    swatch.value = colours[c].hex;
+    swatch.querySelector("")
+    
+  }
+}
+
+function setSwatches() {
+  const swatches = document.querySelectorAll(".swatch");
+
+  for (let s = 4; s < (swatches.length + 3); s++) {
+    const hex = document.querySelector("#hexCode" + s).value;
+
+    swatches[s].style.backgroundColor = "#" + hex;
   }
 }
 
