@@ -4,7 +4,8 @@ async function onLoad() {
   const getColours = await fetch("./colourSwatches.json");
   const coloursJson = await getColours.json();
 
-  console.log(createSwatches(coloursJson.colours));
+  let colours = createSwatches(coloursJson.colours);
+  console.log(orderSwatches(colours));
 }
 
 function createSwatches(colours) {
@@ -19,11 +20,16 @@ function createSwatches(colours) {
     const name = colours[c].name;
     const hex = colours[c].hex;
     
-    if (colours[c].luminance == undefined) {
-      colours[c].luminance = calcLuminance(hex);
+    if (colours[c].luminance == undefined || colours[c].hue == undefined) {
+      let r = parseInt(hex.substr(0,2), 16) / 255
+      let g = parseInt(hex.substr(2,2), 16) / 255;
+      let b = parseInt(hex.substr(4,2), 16) / 255;
+
+      colours[c].luminance = calcLuminance(r, g, b);
+      colours[c].hue = calcHue(r, g, b);
     }
+
     const luminance = parseFloat(colours[c].luminance);
-    console.log(luminance);
 
     div.style.backgroundColor = "#" + hex;
     h1.innerHTML = name;
@@ -40,16 +46,11 @@ function createSwatches(colours) {
   return colours;
 }
 
-function calcLuminance(hex) {
-  let r = parseInt(hex.substr(0,2), 16);
-  let g = parseInt(hex.substr(2,2), 16);
-  let b = parseInt(hex.substr(4,2), 16);
-
+function calcLuminance(r, g, b) {
   let rgb = [r, g, b];
-
+  
   for (let x = 0; x < 3; x++) {
     let y = rgb[x];
-    y = y / 255;
     if (y <= 0.03928) {
       y = y / 12.92
     } else {
@@ -68,4 +69,46 @@ function addSwatch(n) {
 
   newSwatch.id = "swatch" + n;
   swatches.appendChild(newSwatch);
+}
+
+function calcHue(r, g, b) {
+  const Cmax = Math.max(r, g, b);
+  const Cmin = Math.min(r, g, b);
+  const Cdelta = Cmax - Cmin;
+  
+  let hue = 0;
+  if (Cdelta == 0) {
+  }
+  else if (r == Cmax) {
+    hue = 60 * (((g - b) / Cdelta) % 6);
+  }
+  else if (g == Cmax) {
+    hue = 60 * (((b - r) / Cdelta) + 2);
+  }
+  else if (b == Cmax) {
+    hue = 60 * (((r - g) / Cdelta) + 4);
+  }
+
+  if (hue < 0) {
+    hue = hue + 360;
+  }
+  return hue.toFixed(0);
+}
+
+function orderSwatches(colours) {
+  colours.sort(function(a, b) {
+    if (parseInt(a["hue"]) > parseInt(b["hue"])) {
+      return -1;
+    } else if (parseInt(a["hue"]) < parseInt(b["hue"])) {
+      return 1;
+    } else {
+      if (a["luminance"] > b["luminance"]) {
+        return -1;
+      } else {
+        return 1;
+      }
+    }
+  });
+
+  return colours;
 }

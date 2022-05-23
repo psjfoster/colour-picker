@@ -2,231 +2,295 @@
   {
       "name": "axAlarm",
       "hex": "cf1624",
-      "luminance": "0.140"
+      "luminance": "0.140",
+      "hue": "355"
   },
   {
       "name": "jcNeonPink",
       "hex": "ff3278",
-      "luminance": "0.249"
+      "luminance": "0.249",
+      "hue": "340"
   },
   {
       "name": "jcNeonPurple",
       "hex": "b400e6",
-      "luminance": "0.154"
+      "luminance": "0.154",
+      "hue": "287"
   },
   {
       "name": "axOverridden",
       "hex": "bfaddd",
-      "luminance": "0.462"
+      "luminance": "0.462",
+      "hue": "263"
   },
   {
       "name": "jcLoZSSPurple",
       "hex": "500fc8",
-      "luminance": "0.062"
+      "luminance": "0.062",
+      "hue": "261"
   },
   {
       "name": "jcBlue",
       "hex": "4655f5",
-      "luminance": "0.144"
+      "luminance": "0.144",
+      "hue": "235"
   },
   {
       "name": "dimPurple",
       "hex": "6471b4",
-      "luminance": "0.178"
+      "luminance": "0.178",
+      "hue": "230"
   },
   {
       "name": "jcLoZSSBlue",
       "hex": "2d50f0",
-      "luminance": "0.126"
+      "luminance": "0.126",
+      "hue": "229"
   },
   {
       "name": "jcRoyalBlue",
       "hex": "1473fa",
-      "luminance": "0.193"
+      "luminance": "0.193",
+      "hue": "215"
   },
   {
       "name": "jcWildcatBlue",
       "hex": "0084ff",
-      "luminance": "0.237"
+      "luminance": "0.237",
+      "hue": "209"
   },
   {
       "name": "minusBlue",
       "hex": "0ba6f4",
-      "luminance": "0.339"
+      "luminance": "0.339",
+      "hue": "200"
   },
   {
       "name": "blueCool",
       "hex": "0a8fd1",
-      "luminance": "0.243"
+      "luminance": "0.243",
+      "hue": "200"
   },
   {
       "name": "jcNeonBlue",
       "hex": "0ab9e6",
-      "luminance": "0.405"
+      "luminance": "0.405",
+      "hue": "192"
   },
   {
       "name": "jcACNHBlue",
       "hex": "96f5f5",
-      "luminance": "0.784"
-  },
-  {
-      "name": "scrubGreen",
-      "hex": "64e8bc",
-      "luminance": "0.641"
-  },
-  {
-      "name": "jcACNHGreen",
-      "hex": "82ff96",
-      "luminance": "0.785"
-  },
-  {
-      "name": "lightGreen",
-      "hex": "ecf8ec",
-      "luminance": "0.910"
-  },
-  {
-      "name": "midGreen",
-      "hex": "93d793",
-      "luminance": "0.569"
-  },
-  {
-      "name": "watermarkGreen",
-      "hex": "597859",
-      "luminance": "0.163"
-  },
-  {
-      "name": "darkGreen",
-      "hex": "465846",
-      "luminance": "0.087"
-  },
-  {
-      "name": "jcNeonGreen",
-      "hex": "1edc00",
-      "luminance": "0.515"
-  },
-  {
-      "name": "jcNeonYellow",
-      "hex": "e6ff00",
-      "luminance": "0.883"
-  },
-  {
-      "name": "jcPikachuYellow",
-      "hex": "ffdc00",
-      "luminance": "0.724"
-  },
-  {
-      "name": "dimYellow",
-      "hex": "a38f29",
-      "luminance": "0.276"
-  },
-  {
-      "name": "brightYellow",
-      "hex": "ffe880",
-      "luminance": "0.805"
-  },
-  {
-      "name": "litYellow",
-      "hex": "f1d03b",
-      "luminance": "0.641"
-  },
-  {
-      "name": "jcWildcatYellow",
-      "hex": "ffcc00",
-      "luminance": "0.644"
-  },
-  {
-      "name": "axDown",
-      "hex": "fac600",
-      "luminance": "0.607"
-  },
-  {
-      "name": "jcNeonOrange",
-      "hex": "faa005",
-      "luminance": "0.455"
-  },
-  {
-      "name": "jcEeveeBrown",
-      "hex": "c88c32",
-      "luminance": "0.313"
-  },
-  {
-      "name": "axStale",
-      "hex": "d9c09d",
-      "luminance": "0.549"
-  },
-  {
-      "name": "jcCardboard",
-      "hex": "d7aa73",
-      "luminance": "0.444"
-  },
-  {
-      "name": "axFault",
-      "hex": "fc7734",
-      "luminance": "0.341"
-  },
-  {
-      "name": "jcMario",
-      "hex": "f04614",
-      "luminance": "0.230"
-  },
-  {
-      "name": "upRed",
-      "hex": "ff4f38",
-      "luminance": "0.271"
-  },
-  {
-      "name": "jcNeonRed",
-      "hex": "ff3c28",
-      "luminance": "0.246"
-  },
-  {
-      "name": "redHeat",
-      "hex": "ff351f",
-      "luminance": "0.239"
-  },
-  {
-      "name": "jcRed",
-      "hex": "e10f00",
-      "luminance": "0.163"
-  },
-  {
-      "name": "lightGrey",
-      "hex": "f5f5f5",
-      "luminance": "0.913"
-  },
-  {
-      "name": "jcWhite",
-      "hex": "e6e6e6",
-      "luminance": "0.791"
-  },
-  {
-      "name": "axDisabled",
-      "hex": "d6d6d6",
-      "luminance": "0.672"
-  },
-  {
-      "name": "darkGrey",
-      "hex": "a1a1a1",
-      "luminance": "0.356"
-  },
-  {
-      "name": "jcGrey",
-      "hex": "828282",
-      "luminance": "0.223"
+      "luminance": "0.784",
+      "hue": "180"
   },
   {
       "name": "jcMHRGrey",
       "hex": "818282",
-      "luminance": "0.222"
+      "luminance": "0.222",
+      "hue": "180"
+  },
+  {
+      "name": "scrubGreen",
+      "hex": "64e8bc",
+      "luminance": "0.641",
+      "hue": "160"
+  },
+  {
+      "name": "jcACNHGreen",
+      "hex": "82ff96",
+      "luminance": "0.785",
+      "hue": "130"
+  },
+  {
+      "name": "lightGreen",
+      "hex": "ecf8ec",
+      "luminance": "0.910",
+      "hue": "120"
+  },
+  {
+      "name": "midGreen",
+      "hex": "93d793",
+      "luminance": "0.569",
+      "hue": "120"
+  },
+  {
+      "name": "dullGreen",
+      "hex": "a2b4a2",
+      "luminance": "0.429",
+      "hue": "120"
+  },
+  {
+      "name": "watermarkGreen",
+      "hex": "597859",
+      "luminance": "0.163",
+      "hue": "120"
+  },
+  {
+      "name": "darkGreen",
+      "hex": "465846",
+      "luminance": "0.087",
+      "hue": "120"
+  },
+  {
+      "name": "jcNeonGreen",
+      "hex": "1edc00",
+      "luminance": "0.515",
+      "hue": "112"
+  },
+  {
+      "name": "jcNeonYellow",
+      "hex": "e6ff00",
+      "luminance": "0.883",
+      "hue": "66"
+  },
+  {
+      "name": "jcPikachuYellow",
+      "hex": "ffdc00",
+      "luminance": "0.724",
+      "hue": "52"
+  },
+  {
+      "name": "dimYellow",
+      "hex": "a38f29",
+      "luminance": "0.276",
+      "hue": "50"
+  },
+  {
+      "name": "brightYellow",
+      "hex": "ffe880",
+      "luminance": "0.805",
+      "hue": "49"
+  },
+  {
+      "name": "litYellow",
+      "hex": "f1d03b",
+      "luminance": "0.641",
+      "hue": "49"
+  },
+  {
+      "name": "gold",
+      "hex": "a7902a",
+      "luminance": "0.283",
+      "hue": "49"
+  },
+  {
+      "name": "lightGold",
+      "hex": "fffae5",
+      "luminance": "0.953",
+      "hue": "48"
+  },
+  {
+      "name": "jcWildcatYellow",
+      "hex": "ffcc00",
+      "luminance": "0.644",
+      "hue": "48"
+  },
+  {
+      "name": "axDown",
+      "hex": "fac600",
+      "luminance": "0.607",
+      "hue": "48"
+  },
+  {
+      "name": "jcNeonOrange",
+      "hex": "faa005",
+      "luminance": "0.455",
+      "hue": "38"
+  },
+  {
+      "name": "jcEeveeBrown",
+      "hex": "c88c32",
+      "luminance": "0.313",
+      "hue": "36"
+  },
+  {
+      "name": "axStale",
+      "hex": "d9c09d",
+      "luminance": "0.549",
+      "hue": "35"
+  },
+  {
+      "name": "jcCardboard",
+      "hex": "d7aa73",
+      "luminance": "0.444",
+      "hue": "33"
+  },
+  {
+      "name": "axFault",
+      "hex": "fc7734",
+      "luminance": "0.341",
+      "hue": "20"
+  },
+  {
+      "name": "jcMario",
+      "hex": "f04614",
+      "luminance": "0.230",
+      "hue": "14"
+  },
+  {
+      "name": "upRed",
+      "hex": "ff4f38",
+      "luminance": "0.271",
+      "hue": "7"
+  },
+  {
+      "name": "jcNeonRed",
+      "hex": "ff3c28",
+      "luminance": "0.246",
+      "hue": "6"
+  },
+  {
+      "name": "redHeat",
+      "hex": "ff351f",
+      "luminance": "0.239",
+      "hue": "6"
+  },
+  {
+      "name": "jcRed",
+      "hex": "e10f00",
+      "luminance": "0.163",
+      "hue": "4"
+  },
+  {
+      "name": "lightGrey",
+      "hex": "f5f5f5",
+      "luminance": "0.913",
+      "hue": "0"
+  },
+  {
+      "name": "jcWhite",
+      "hex": "e6e6e6",
+      "luminance": "0.791",
+      "hue": "0"
+  },
+  {
+      "name": "axDisabled",
+      "hex": "d6d6d6",
+      "luminance": "0.672",
+      "hue": "0"
+  },
+  {
+      "name": "darkGrey",
+      "hex": "a1a1a1",
+      "luminance": "0.356",
+      "hue": "0"
+  },
+  {
+      "name": "jcGrey",
+      "hex": "828282",
+      "luminance": "0.223",
+      "hue": "0"
   },
   {
       "name": "darkerGrey",
       "hex": "525252",
-      "luminance": "0.084"
+      "luminance": "0.084",
+      "hue": "0"
   },
   {
       "name": "jcBlack",
       "hex": "313131",
-      "luminance": "0.031"
+      "luminance": "0.031",
+      "hue": "0"
   }
 ]}
